@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+:root { 
+    --primary-color: #DB2626;
+    --bodyfont : 'Roboto', sans-serif;
+}
+
+body {
+    background: #FFFFFF;
+    margin: 0;
+    font-family: 'Manrope' , sans-serif;
+}
+
+.navbar {
+    padding: 2em 2em 2em 2em;
+    border-bottom:  3px var(--primary-color);
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color:var(--primary-color);
+        font-size: 2em;
+        font-family: "Monoton", sans-serif;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .nav-container {
+        display: flex;
+        place-content: space-between;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+    }
+}
+
+a {
+    color: black;
+}
+
+ul {
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
+}
+
+section {
+    padding: 2em 2.5em;
+}
+
+.hero {
+    padding: 0 2em;
+
+    .container {
+
+        .left-col {
+            line-height: 1em;
+
+            .title-main{
+                line-height: 1em;
+
+                .title-black {
+                    color: black;
+                    font-size: 3.5em;
+                }
+                
+                .title-red {
+                    color: var(--primary-color);
+                    font-size: 3.5em;
+                    line-height: 1em;
+                    margin: 0;
+                }
+            }
+            
+
+            
+            .hero-about {
+                padding: 2em 0em 0em 0em;
+                font-family: var(--bodyfont);
+            }
+            
+            .hero-about p {
+                line-height: 1.9em;
+                font-size: 1em;
+                letter-spacing: .02em;
+            }
+            
+            .hero-cta {
+                display: flex;
+                padding: 2em 0em 0em 0em;
+                
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+                    padding: 1.5em 1em 0 1em;
+                }
+
+                h3 {
+                    font-size: 2em;
+                    font-weight: bold;
+                    line-height: 1em;
+                }
+
+                .bounce {
+                    -moz-animation: bounce 2s infinite;
+                    -webkit-animation: bounce 2s infinite;
+                    animation: bounce 2s infinite;
+                    }
+                    
+                    @keyframes bounce {
+                    0%, 20%, 50%, 80%, 100% {
+                            transform: translateY(0);
+                        }
+                        40% {
+                            transform: translateY(-30px);
+                        }
+                        60% {
+                            transform: translateY(-15px);
+                        }
+                    }
+            }
+        }
+
+        .right-col {
+            display: none;
+        }
+    }
+}
+
+
+
+.heading {
+    color: var(--primary-color);
+    font-size: 4em;
+    text-align: center;
+}
+
+.work-container {
+    text-align: center;
+
+    .project-example {
+        text-align: left;
+        margin: 2em 0 2em 0;
+
+        h4 {
+            font-family: 'Manrope', sans-serif;
+            margin: 0;
+            padding: 1em 0 0em 0;
+            font-size: 1.4em;
+        }
+
+        p {
+            margin: 0;
+            padding: 1em 0 2em 0;
+            font-family: var(--bodyfont);
+            line-height: 2em;
+            color: grey;
+        }
+        
+        .work-cta {
+            display: flex;
+            align-items: center;
+            width: 100%;
+
+            .git-link {
+                display: flex;
+                flex-direction: row;
+                padding-right: 1em;
+            }
+
+            .live-link {
+                padding-top: 6px;
+            }
+        }
+
+    }
+
+    .rmm {
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .left-work-1 {
+        padding: 1em;
+    }
+
+    .left-work-2 {
+        padding: 1em;
+    }
+
+    .right-work-1 {
+        padding: 1em;
+    }
+
+    .right-work-2 {
+        padding: 1em;
+    }
+}
+
+#skills {
+    text-align: center;
+
+    .container {
+        .about-list{
+            text-align: center;
+
+            ul {
+                padding-top: 4em;
+                columns: 2;
+            }
+        
+            li {
+                text-align: center;
+                font-size: 1.2em;
+                margin-bottom: 1em;
+            }
+        }
+        
+        .about-me {
+            padding-top: 6em;
+
+            p {
+                font-family: var(--bodyfont);
+                line-height: 1.9em;
+                font-size: 1em;
+                letter-spacing: .02em;
+            }
+
+        }
+    }
+}
+
+#contact { 
+    padding-top: 2em;
+    text-align: start;
+
+    .title {
+        padding-top: 1em;
+
+        .contact-head {
+            color:var(--primary-color);
+            font-size: 2em;
+            margin: 0;
+        }
+
+        p{
+            font-family: var(--bodyfont);
+            line-height: 1.9em;
+            font-size: 1em;
+            letter-spacing: .02em;
+            padding-top: 1em;
+            padding-bottom: 1.5em;
+        }
+
+    }
+
+}
+
+
+
+
+footer {
+    padding: 5em 2em 3em 2em;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .title-footer {
+            .logo {
+                text-decoration: none;
+                font-weight: bold;
+                color:var(--primary-color);
+                font-size: 1.5em;
+                font-family: "Monoton", sans-serif;
+            }
+        }
+
+        .social-footer {
+
+            .social {
+                text-decoration: none;
+                margin: 1em 1em 0 0;
+                padding-top: 1em;
+                font-family: var(--bodyfont);
+            }
+
+            &:hover {
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 30%;
+    right: 0;
+    top: 0;
+    background: #f6f6f6;
+    height: 30vh;
+    padding: 1em;
+    border-radius: 0 0 0 5px;
+
+    ul.primary-nav {
+        // margin-top: 5em;
+        display: none;
+    }
+
+    ul.secondary-nav {
+        margin-top: 3em;
+        font-family: var(--bodyfont);
+        font-size: 1em;
+        text-align: start;
+    }
+
+
+
+    li {
+        
+        a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+    section.hero {
+        padding: 3em;
+    }
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .nav-container {
+        display: grid;
+        grid-template-columns: 80px auto;
+        justify-content: unset;
+    }
+
+
+    .navbar {
+        padding: 2em 3em 0 3em;
+        display: flexbox;
+        align-items: center;
+
+        .logo-div {
+            padding: 1em 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background: none;
+            position: unset;
+            height: auto;
+            width: 100%;
+            padding: none;
+
+            li {
+                height: 1em;
+            }
+
+            ul {
+                display: flex;
+            }
+
+            .secondary-nav {
+                margin: 0;
+
+                li a {
+                    padding-top: .8em;
+                    font-size: 1.1em;
+                }
+            }
+
+        }
+    }
+
+    .hero {
+
+        .left-col {
+            line-height: 1em;
+            padding: .5em 0;
+            width: 75%;
+            margin: 0;
+        
+                .title-main{
+            
+                    .title-black {
+                        color: black;
+                        font-size: 3.5em;
+                    }
+                    
+                    .title-red {
+                        color: var(--primary-color);
+                        font-size: 3.5em;
+                        line-height: .3em;
+                    }
+                }
+                
+                .hero-about p {
+                    width: 80%;
+                    margin: 3em 0 2.5em 0;
+                }
+            }
+
+    }
+
+        .work-container {
+            display: flex;
+
+            .left-col-work {
+                float: left;
+                width: 50%;
+                padding: 1em;
+
+                .left-work-1 {
+                    height: 30em;
+                    margin: 1em 1em 3em 1em;
+                }
+
+                .left-work-2 {
+                    height: 20em;
+                    margin: 1em 1em 3em 1em;
+                }
+            }
+
+            .right-col-work {
+                float: right;
+                width: 50%;
+                padding: 1em;
+
+                .right-work-1 {
+                    height: 30em;
+                    margin: 1em 1em 3em 1em;
+                }
+
+                .right-work-2 {
+                    height: 20em;
+                    margin: 1em 1em 3em 1em;
+                }
+            }
+        
+            .project-example {
+                text-align: left;
+        
+                p {
+                    padding-bottom: 1em;
+                }
+                
+                .work-cta {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+        
+                    .git-link {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0em 1em 0em 0em;
+                    }
+        
+                    .live-link {
+                        font-family: var(--bodyfont);
+                        font-size: .9em;
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+        
+            }
+
+        }
+
+        #skills {
+
+            padding: 3em 3em 0 3em;
+            .container {
+
+                .about-list{
+
+                    ul {
+                        width: 60%;
+                        margin: auto;
+
+                        li {
+                            margin-bottom: 1.5em;
+                        }
+                    }
+                }
+
+                .about-me {
+
+                    p {
+                        width: 70%; 
+                        margin: auto;
+                    }
+                }
+            }
+        }
+                
+        #contact {
+            padding-top: 7em;
+
+            .container {
+                width: 50%;
+                margin: auto;
+            }
+        }
+
+        footer {
+            padding: 7em 3em 2em 3em;
+        }
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        .navbar {
+            padding: 2em 5em 0 5em;
+        }
+
+        section.hero,  #work {
+            padding: 0 5em 0 5em;
+        }
+
+        .hero {
+            
+            .container {
+
+                .left-col {
+                    width: 60%; 
+                    padding: 0;
+
+                    .title-main {
+                        font-size: 1.2em;
+                        line-height: 1.5em;
+                    }
+
+                    .hero-about {
+                        padding-bottom: 1em;
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
+
+        #skills {
+            padding: 5em;
+
+            .container {
+
+                .about-me {
+
+                    p {
+                        line-height: 2em;
+                    }
+                }
+            }
+        }
+
+        footer {
+            padding-right: 5em;
+            padding-left: 5em;
+        }
+
+    }
+
+    @media only screen and (min-width: 1440px) {
+        .navbar {
+            padding: 1em 8em 0 8em;
+
+            .logo {
+                font-size: 2.25em;
+            }
+            .primary-nav{
+                font-size: 1.25em;
+
+                li { 
+                    padding-bottom: .2em;
+                    padding-left: .5em;
+                }
+            }
+            .secondary-nav {
+                font-size: 1.25em;
+            }
+        }
+
+        section.hero,  #work {
+            padding: 0 8em 0 8em;
+        }
+
+        .hero {
+            
+            .container {
+
+                .left-col {
+                    width: 60%; 
+                    padding: 0;
+
+                    .title-main {
+                        padding: 1em 0 0 0;
+                        font-size: 1.3em;
+                    }
+
+                    .hero-about {
+                        padding: 0;
+                        font-size: 1.3em;
+                    }
+
+                    .hero-cta {
+                        padding-bottom: 4em;
+                    }
+                }
+            }
+        }
+        
+        .heading {
+            font-size: 6em;
+        }
+        #work {
+
+            .work-container {
+
+                .left-col-work {
+
+                    .left-work-1{
+                        padding: 2em 2em 4em 2em;
+                    }
+
+                    .left-work-2 {
+                        padding: 2em 2em 4em 2em;
+                    }
+                }
+
+                .right-col-work {
+
+                    .right-work-1{
+                        padding: 2em 2em 4em 2em;
+                    }
+
+                    .right-work-2 {
+                        padding: 2em 2em 4em 2em;
+                    }
+                }
+            }
+        }  
+
+        #skills {
+
+            .container {
+
+                .about-list {
+
+                    ul {
+
+                        li {
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+
+                .about-me {
+                    
+                    p {
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        #contact {
+            padding-right: 8em; 
+            padding-left: 8em;
+
+            .container {
+
+                .title {
+
+                    .contact-head {
+                        font-size: 3.5em;
+                    }
+
+                    p , a {
+                        font-size: 1.3em
+                    }
+                }
+            }
+        }
+        footer {
+            padding-right: 8em;
+            padding-left: 8em;
+
+            .container {
+
+                .title-footer {
+
+                    .logo {
+                        font-size: 2.25em;
+                    }
+                }
+
+                .social-footer {
+
+                    a {
+
+                        font-size: 1.25em;
+                    }
+                }
+            }
+        }
+    }
+
+@media only screen and (min-width: 1600px) {
+    .navbar {
+        padding: 2em 10em 0 10em;
+    }
+
+    section.hero,  #work {
+        padding: 0 10em 0 10em;
+    }
+
+    .left-col {
+        
+        .title-main {
+            margin-top: 2em;
+        }
+
+        .hero-about {
+            p {
+                padding: 2em 0 0 0;
+            }
+        }
+    }
+    #work {
+
+        .work-container {
+
+            .left-col-work {
+
+                .left-work-1{
+                    padding: 2em 2em 10em 2em;
+                }
+
+                .left-work-2 {
+                    padding: 2em 2em 10em 2em;
+                }
+            }
+
+            .right-col-work {
+
+                .right-work-1{
+                    padding: 2em 2em 10em 2em;
+                }
+
+                .right-work-2 {
+                    padding: 2em 2em 10em 2em;
+                }
+            }
+        }
+    }
+
+    .about-p {
+        
+        .about-me {
+            width: 50%;
+            line-height: 3em;
+        }
+    }
+}
