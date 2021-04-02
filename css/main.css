@@ -305,15 +305,47 @@ footer .container .title-footer .logo {
   font-family: "Monoton", sans-serif;
 }
 
-footer .container .social-footer .social {
-  text-decoration: none;
-  margin: 1em 1em 0 0;
-  padding-top: 1em;
-  font-family: var(--bodyfont);
+footer .container .social-footer {
+  height: 50%;
+  padding-top: .6em;
 }
 
-footer .container .social-footer:hover {
-  font-weight: bolder;
+footer .container .social-footer .social {
+  text-decoration: none;
+  font-family: var(--bodyfont);
+  margin-left: 2em;
+  padding-bottom: .2em;
+}
+
+footer .container .social-footer a {
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+
+footer .container .social-footer a:hover {
+  color: black;
+}
+
+footer .container .social-footer a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+footer .container .social-footer a:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 nav.menu-btn {
@@ -350,10 +382,6 @@ nav li a {
   padding: .5em;
   font-size: 1.3em;
   text-align: right;
-}
-
-nav li a:hover {
-  font-weight: bold;
 }
 
 .mobile-menu-exit {
@@ -413,8 +441,36 @@ nav li a:hover {
     margin: 0;
   }
   .navbar nav .secondary-nav li a {
-    padding-top: .8em;
+    padding: .8em 0 .1em 0;
     font-size: 1.1em;
+    margin-left: 1.2em;
+  }
+  .navbar nav .secondary-nav a {
+    position: relative;
+    color: black;
+    text-decoration: none;
+  }
+  .navbar nav .secondary-nav a:hover {
+    color: black;
+  }
+  .navbar nav .secondary-nav a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .navbar nav .secondary-nav a:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   .hero .left-col {
     line-height: 1em;
