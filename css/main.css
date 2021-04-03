@@ -171,13 +171,13 @@ section {
 .work-container .project-example h4 {
   font-family: 'Manrope', sans-serif;
   margin: 0;
-  padding: 1em 0 0em 0;
+  padding-top: 1em;
   font-size: 1.4em;
 }
 
 .work-container .project-example p {
   margin: 0;
-  padding: 1em 0 2em 0;
+  padding: 1em 0 1em 0;
   font-family: var(--bodyfont);
   line-height: 2em;
   color: grey;
@@ -229,24 +229,99 @@ section {
   padding: 1em;
 }
 
+.current-project {
+  text-align: left;
+}
+
+.current-project .current-example {
+  text-align: left;
+  margin: 2em 0 2em 0;
+  padding: 1em;
+}
+
+.current-project .current-example img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.current-project .current-example .curr-description {
+  text-align: center;
+}
+
+.current-project .current-example .curr-description h4 {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 1em 0 0em 0;
+  font-size: 1.4em;
+}
+
+.current-project .current-example .curr-description p {
+  margin: 0;
+  padding: 1em 0 1em 0;
+  font-family: var(--bodyfont);
+  line-height: 2em;
+  color: grey;
+}
+
+.current-project .current-example .curr-description .curr-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.current-project .current-example .curr-description .curr-cta .curr-git {
+  padding-right: 1em;
+}
+
+.current-project .current-example .curr-description .curr-cta .curr-live {
+  padding-top: 6px;
+}
+
 #skills {
   text-align: center;
 }
 
-#skills .container .about-list {
-  text-align: center;
+#skills .container .grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(95px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(95px, 1fr));
+  grid-gap: 1rem;
+  width: 88%;
+  margin: auto;
 }
 
-#skills .container .about-list ul {
-  padding-top: 4em;
-  -webkit-columns: 2;
-          columns: 2;
+#skills .container .grid > div {
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 5px;
+  background-color: #f3f3f3;
 }
 
-#skills .container .about-list li {
-  text-align: center;
-  font-size: 1.2em;
-  margin-bottom: 1em;
+#skills .container .grid > div::before, #skills .container .grid > div > img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+#skills .container .grid > div > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#skills .container .grid > div::before {
+  content: "";
+  padding-bottom: 100%;
+  display: block;
 }
 
 #skills .container .about-me {
@@ -491,6 +566,9 @@ nav li a {
     width: 80%;
     margin: 3em 0 2.5em 0;
   }
+  #work {
+    margin: 2em 0 2em 0;
+  }
   .work-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -553,22 +631,23 @@ nav li a {
     color: black;
     text-decoration: none;
   }
+  .current-project .current-example {
+    text-align: left;
+    margin: 5em 0 0em 0;
+    padding: 3em 3em 0 3em;
+  }
   #skills {
     padding: 3em 3em 0 3em;
   }
-  #skills .container .about-list ul {
-    width: 60%;
-    margin: auto;
-  }
-  #skills .container .about-list ul li {
-    margin-bottom: 1.5em;
+  #skills .container .grid {
+    padding: 3em 0 2em 0;
   }
   #skills .container .about-me p {
     width: 70%;
     margin: auto;
   }
   #contact {
-    padding-top: 7em;
+    padding: 9em 0 9em 0;
   }
   #contact .container {
     width: 50%;
@@ -583,7 +662,7 @@ nav li a {
   .navbar {
     padding: 2em 5em 0 5em;
   }
-  section.hero, #work {
+  section.hero {
     padding: 0 5em 0 5em;
   }
   .hero .container .left-col {
@@ -598,11 +677,22 @@ nav li a {
     padding-bottom: 1em;
     font-size: 1.1em;
   }
+  #work {
+    margin: 3em 0 3em 0;
+  }
+  #work .current-project .current-example {
+    padding: 0 6em 0 6em;
+  }
+  #work .current-project .current-example img {
+    width: 100%;
+  }
+  .current-project .current-example {
+    text-align: left;
+    margin: 9em 0 0em 0;
+    padding: 3em 3em 0 3em;
+  }
   #skills {
     padding: 5em;
-  }
-  #skills .container .about-me p {
-    line-height: 2em;
   }
   footer {
     padding-right: 5em;
@@ -648,20 +738,29 @@ nav li a {
   .heading {
     font-size: 6em;
   }
+  #work .work-container .project-example h4 {
+    font-size: 1.35em;
+  }
+  #work .work-container .project-example p {
+    font-size: 1.2em;
+  }
   #work .work-container .left-col-work .left-work-1 {
-    padding: 2em 2em 4em 2em;
+    padding: 2em 2em 6em 2em;
   }
   #work .work-container .left-col-work .left-work-2 {
-    padding: 2em 2em 4em 2em;
+    padding: 2em 2em 6em 2em;
   }
   #work .work-container .right-col-work .right-work-1 {
-    padding: 2em 2em 4em 2em;
+    padding: 2em 2em 6em 2em;
   }
   #work .work-container .right-col-work .right-work-2 {
-    padding: 2em 2em 4em 2em;
+    padding: 2em 2em 6em 2em;
   }
-  #skills .container .about-list ul li {
-    font-size: 1.5em;
+  #work .current-project .current-example .curr-description h4 {
+    font-size: 1.35em;
+  }
+  #work .current-project .current-example .curr-description p {
+    font-size: 1.2em;
   }
   #skills .container .about-me p {
     font-size: 1.3em;
@@ -712,6 +811,9 @@ nav li a {
   }
   #work .work-container .right-col-work .right-work-2 {
     padding: 2em 2em 10em 2em;
+  }
+  #work .current-project .current-example {
+    padding: 10em;
   }
   .about-p .about-me {
     width: 50%;
