@@ -434,7 +434,7 @@ nav {
   right: 0;
   top: 0;
   background: #f6f6f6;
-  height: 30vh;
+  height: 100vh;
   padding: 1em;
   border-radius: 0 0 0 5px;
 }
@@ -704,18 +704,9 @@ nav li a {
   .navbar {
     padding: 1em 8em 0 8em;
   }
-  .navbar .logo {
-    font-size: 2.25em;
-  }
-  .navbar .primary-nav {
-    font-size: 1.25em;
-  }
   .navbar .primary-nav li {
     padding-bottom: .2em;
     padding-left: .5em;
-  }
-  .navbar .secondary-nav {
-    font-size: 1.25em;
   }
   section.hero, #work {
     padding: 0 8em 0 8em;
@@ -726,23 +717,15 @@ nav li a {
   }
   .hero .container .left-col .title-main {
     padding: 1em 0 0 0;
-    font-size: 1.3em;
   }
   .hero .container .left-col .hero-about {
     padding: 0;
-    font-size: 1.3em;
   }
   .hero .container .left-col .hero-cta {
     padding-bottom: 4em;
   }
   .heading {
     font-size: 6em;
-  }
-  #work .work-container .project-example h4 {
-    font-size: 1.35em;
-  }
-  #work .work-container .project-example p {
-    font-size: 1.2em;
   }
   #work .work-container .left-col-work .left-work-1 {
     padding: 2em 2em 6em 2em;
@@ -756,15 +739,6 @@ nav li a {
   #work .work-container .right-col-work .right-work-2 {
     padding: 2em 2em 6em 2em;
   }
-  #work .current-project .current-example .curr-description h4 {
-    font-size: 1.35em;
-  }
-  #work .current-project .current-example .curr-description p {
-    font-size: 1.2em;
-  }
-  #skills .container .about-me p {
-    font-size: 1.3em;
-  }
   #contact {
     padding-right: 8em;
     padding-left: 8em;
@@ -772,18 +746,9 @@ nav li a {
   #contact .container .title .contact-head {
     font-size: 3.5em;
   }
-  #contact .container .title p, #contact .container .title a {
-    font-size: 1.3em;
-  }
   footer {
     padding-right: 8em;
     padding-left: 8em;
-  }
-  footer .container .title-footer .logo {
-    font-size: 2.25em;
-  }
-  footer .container .social-footer a {
-    font-size: 1.25em;
   }
 }
 

@@ -400,7 +400,7 @@ nav {
     right: 0;
     top: 0;
     background: #f6f6f6;
-    height: 30vh;
+    height: 100vh;
     padding: 1em;
     border-radius: 0 0 0 5px;
 
@@ -732,20 +732,20 @@ nav {
         .navbar {
             padding: 1em 8em 0 8em;
 
-            .logo {
-                font-size: 2.25em;
-            }
+            // .logo {
+            //     font-size: 2.25em;
+            // }
             .primary-nav{
-                font-size: 1.25em;
+                // font-size: 1.25em;
 
                 li { 
                     padding-bottom: .2em;
                     padding-left: .5em;
                 }
             }
-            .secondary-nav {
-                font-size: 1.25em;
-            }
+            // .secondary-nav {
+            //     font-size: 1.25em;
+            // }
         }
 
         section.hero,  #work {
@@ -762,12 +762,12 @@ nav {
 
                     .title-main {
                         padding: 1em 0 0 0;
-                        font-size: 1.3em;
+                        // font-size: 1.3em;
                     }
 
                     .hero-about {
                         padding: 0;
-                        font-size: 1.3em;
+                        // font-size: 1.3em;
                     }
 
                     .hero-cta {
@@ -783,17 +783,6 @@ nav {
         #work {
 
             .work-container {
-
-                .project-example {
-
-                    h4 {
-                        font-size: 1.35em;
-                    }
-
-                    p { 
-                        font-size: 1.2em;
-                    }
-                }
 
                 .left-col-work {
 
@@ -817,37 +806,7 @@ nav {
                     }
                 }
             }
-
-            .current-project {
-
-                .current-example {
-
-                    .curr-description {
-
-                        h4 {
-                            font-size: 1.35em;
-                        }
-
-                        p {
-                            font-size: 1.2em;
-                        }
-                    }
-                }
-            }
         } 
-
-        #skills {
-
-            .container {
-
-                .about-me {
-                    
-                    p {
-                        font-size: 1.3em;
-                    }
-                }
-            }
-        }
         #contact {
             padding-right: 8em; 
             padding-left: 8em;
@@ -859,34 +818,12 @@ nav {
                     .contact-head {
                         font-size: 3.5em;
                     }
-
-                    p , a {
-                        font-size: 1.3em
-                    }
                 }
             }
         }
         footer {
             padding-right: 8em;
             padding-left: 8em;
-
-            .container {
-
-                .title-footer {
-
-                    .logo {
-                        font-size: 2.25em;
-                    }
-                }
-
-                .social-footer {
-
-                    a {
-
-                        font-size: 1.25em;
-                    }
-                }
-            }
         }
     }
 
