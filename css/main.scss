@@ -412,7 +412,6 @@ nav {
     border-radius: 0 0 0 5px;
 
     ul.primary-nav {
-        // margin-top: 5em;
         display: none;
     }
 
@@ -442,71 +441,6 @@ nav {
     float: right;
     margin: .5em;
     cursor: pointer;
-}
-
-
-// Carousel 
-
-$carousel-height: 250px;
-$control-size: 50px;
-
-
-.carousel {
-  width: 370px;
-  height: $carousel-height;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-  
-  &:hover .controls {
-    opacity: 1;
-  }
-  
-  .controls {
-    opacity: 0;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 99999;
-    transition: all ease 0.5s;
-    
-    .control {
-      margin: 0 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.7);
-      opacity: .5;
-      transition: ease .3s;
-      cursor: pointer;
-      
-      &:hover {
-        opacity: 1;
-      }
-    }
-  }
-  
-    .slides {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      display: flex;
-      width: 100%;
-      transition: 1s ease all;
-      
-      .slide {
-        min-width: 100%;
-        min-height: $carousel-height;
-        height: auto;
-      }
-    }
 }
 
 // Media Queries
@@ -629,43 +563,32 @@ $control-size: 50px;
         margin: 2em 0 2em 0; 
     }
 
-        .work-container {
-            display: flex;
+    .mirror {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 
-            .left-col-work {
-                float: left;
-                width: 50%;
-                padding: 1em;
+    .non-mirror {
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
 
-                .left-work-1 {
-                    height: 30em;
-                    margin: 1em 1em 3em 1em;
-                }
-
-                .left-work-2 {
-                    height: 20em;
-                    margin: 1em 1em 3em 1em;
-                }
-            }
-
-            .right-col-work {
-                float: right;
-                width: 50%;
-                padding: 1em;
-
-                .right-work-1 {
-                    height: 30em;
-                    margin: 1em 1em 3em 1em;
-                }
-
-                .right-work-2 {
-                    height: 20em;
-                    margin: 1em 1em 3em 1em;
-                }
-            }
-        
+    }
             .project-example {
-                text-align: left;
+
+                .image {
+                    margin: 2em;
+                    max-width: 350px;
+                    min-width: 350px;
+                    
+                }
+
+                .project-info {
+                    margin: 2em;
+                }
         
                 p {
                     padding-bottom: 1em;
@@ -692,50 +615,51 @@ $control-size: 50px;
         
             }
 
-        }
-
-        .current-project {
+            .current-project {
         
-            .current-example {
-                text-align: left;
-                margin: 5em 0 0em 0;
-                padding: 3em 3em 0 3em;
-            }
-        }
-        
-
-        #skills {
-
-            padding: 3em 3em 0 3em;
-            .container {
-
-                .grid {
-                    padding: 3em 0 2em 0;
+                .current-example {
+                    text-align: left;
+                    margin: 5em 0 0em 0;
+                    padding: 3em 3em 0 3em;
                 }
-
-                .about-me {
-
-                    p {
-                        width: 70%; 
-                        margin: auto;
+            }
+            
+    
+            #skills {
+    
+                padding: 3em 3em 0 3em;
+                .container {
+    
+                    .grid {
+                        padding: 3em 0 2em 0;
+                    }
+    
+                    .about-me {
+    
+                        p {
+                            width: 70%; 
+                            margin: auto;
+                        }
                     }
                 }
             }
-        }
-                
-        #contact {
-            padding: 9em 0 9em 0;
-
-            .container {
-                width: 50%;
-                margin: auto;
+                    
+            #contact {
+                padding: 9em 0 9em 0;
+    
+                .container {
+                    width: 50%;
+                    margin: auto;
+                }
             }
+    
+            footer {
+                padding: 7em 3em 2em 3em;
+            }
+
         }
 
-        footer {
-            padding: 7em 3em 2em 3em;
-        }
-    }
+
 
     @media only screen and (min-width: 1024px) {
 

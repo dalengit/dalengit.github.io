@@ -472,80 +472,6 @@ nav li a {
   cursor: pointer;
 }
 
-.carousel {
-  width: 370px;
-  height: 250px;
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-}
-
-.carousel:hover .controls {
-  opacity: 1;
-}
-
-.carousel .controls {
-  opacity: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  z-index: 99999;
-  -webkit-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-}
-
-.carousel .controls .control {
-  margin: 0 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.7);
-  opacity: .5;
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
-  cursor: pointer;
-}
-
-.carousel .controls .control:hover {
-  opacity: 1;
-}
-
-.carousel .slides {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-transition: 1s ease all;
-  transition: 1s ease all;
-}
-
-.carousel .slides .slide {
-  min-width: 100%;
-  min-height: 250px;
-  height: auto;
-}
-
 @media only screen and (min-width: 768px) {
   section.hero {
     padding: 3em;
@@ -650,44 +576,48 @@ nav li a {
   #work {
     margin: 2em 0 2em 0;
   }
-  .work-container {
+  .mirror {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .work-container .left-col-work {
-    float: left;
-    width: 50%;
-    padding: 1em;
+  .non-mirror {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .work-container .left-col-work .left-work-1 {
-    height: 30em;
-    margin: 1em 1em 3em 1em;
+  .project-example .image {
+    margin: 2em;
+    max-width: 350px;
+    min-width: 350px;
   }
-  .work-container .left-col-work .left-work-2 {
-    height: 20em;
-    margin: 1em 1em 3em 1em;
+  .project-example .project-info {
+    margin: 2em;
   }
-  .work-container .right-col-work {
-    float: right;
-    width: 50%;
-    padding: 1em;
-  }
-  .work-container .right-col-work .right-work-1 {
-    height: 30em;
-    margin: 1em 1em 3em 1em;
-  }
-  .work-container .right-col-work .right-work-2 {
-    height: 20em;
-    margin: 1em 1em 3em 1em;
-  }
-  .work-container .project-example {
-    text-align: left;
-  }
-  .work-container .project-example p {
+  .project-example p {
     padding-bottom: 1em;
   }
-  .work-container .project-example .work-cta {
+  .project-example .work-cta {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -696,7 +626,7 @@ nav li a {
             align-items: center;
     width: 100%;
   }
-  .work-container .project-example .work-cta .git-link {
+  .project-example .work-cta .git-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -706,7 +636,7 @@ nav li a {
             flex-direction: row;
     padding: 0em 1em 0em 0em;
   }
-  .work-container .project-example .work-cta .live-link {
+  .project-example .work-cta .live-link {
     font-family: var(--bodyfont);
     font-size: .9em;
     color: black;
