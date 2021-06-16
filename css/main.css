@@ -283,7 +283,7 @@ section {
 }
 
 .current-project .current-example .curr-description .curr-cta .curr-live {
-  padding-top: 6px;
+  padding-top: 3px;
 }
 
 #skills {
@@ -327,6 +327,7 @@ section {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  height: 70px;
 }
 
 #skills .container .grid-wrap .grid > div::before {
@@ -378,6 +379,10 @@ footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -392,6 +397,13 @@ footer .container .title-footer .logo {
 }
 
 footer .container .social-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 50%;
   padding-top: .6em;
 }
@@ -725,7 +737,7 @@ nav li a {
     margin: 9em 0 0em 0;
     padding: 3em 3em 0 3em;
   }
-  .work-container .current-project .current-example img {
+  .work-container .current-project .current-example .curr-img {
     display: block;
     margin: auto;
     width: 70%;
@@ -770,13 +782,13 @@ nav li a {
     padding: 2em 2em 6em 2em;
   }
   #work .work-container .left-col-work .left-work-2 {
-    padding: 2em 2em 6em 2em;
+    padding: 0em 2em 6em 2em;
   }
   #work .work-container .right-col-work .right-work-1 {
-    padding: 2em 2em 6em 2em;
+    padding: 0em 2em 6em 2em;
   }
   #work .work-container .right-col-work .right-work-2 {
-    padding: 2em 2em 6em 2em;
+    padding: 0em 2em 6em 2em;
   }
   #contact {
     padding-right: 8em;
@@ -808,16 +820,16 @@ nav li a {
     padding: 2em 2em 10em 2em;
   }
   #work .work-container .left-col-work .left-work-2 {
-    padding: 2em 2em 10em 2em;
+    padding: 0em 2em 10em 2em;
   }
   #work .work-container .right-col-work .right-work-1 {
-    padding: 2em 2em 10em 2em;
+    padding: 0em 2em 10em 2em;
   }
   #work .work-container .right-col-work .right-work-2 {
-    padding: 2em 2em 10em 2em;
+    padding: 0em 2em 10em 2em;
   }
   #work .current-project .current-example {
-    padding: 10em;
+    padding: 0 10em 10em 10em;
   }
   .about-p .about-me {
     width: 50%;
