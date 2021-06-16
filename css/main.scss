@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root { 
     --primary-color: #DB2626;
     --bodyfont : 'Roboto', sans-serif;
@@ -560,102 +564,55 @@ nav {
     }
 
     #work {
-        margin: 2em 0 2em 0; 
+
+        .work-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .left-col-work{
+                min-width: 650px;
+                max-width: 1440px;
+            }
+
+            .right-col-work {
+                max-width: 650px;
+                max-width: 1440px;
+            }
+        }
     }
 
-    .mirror {
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+    #skills {
+        padding: 3em 3em 0 3em;
+        .container {
 
-    .non-mirror {
-        display:flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: center;
+            .grid {
+                padding: 3em 0 2em 0;
+            }
 
-    }
-            .project-example {
+            .about-me {
 
-                .image {
-                    margin: 2em;
-                    max-width: 350px;
-                    min-width: 350px;
-                    
-                }
-
-                .project-info {
-                    margin: 2em;
-                }
-        
                 p {
-                    padding-bottom: 1em;
-                }
-                
-                .work-cta {
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-        
-                    .git-link {
-                        display: flex;
-                        flex-direction: row;
-                        padding: 0em 1em 0em 0em;
-                    }
-        
-                    .live-link {
-                        font-family: var(--bodyfont);
-                        font-size: .9em;
-                        color: black;
-                        text-decoration: none;
-                    }
-                }
-        
-            }
-
-            .current-project {
-        
-                .current-example {
-                    text-align: left;
-                    margin: 5em 0 0em 0;
-                    padding: 3em 3em 0 3em;
-                }
-            }
-            
-    
-            #skills {
-    
-                padding: 3em 3em 0 3em;
-                .container {
-    
-                    .grid {
-                        padding: 3em 0 2em 0;
-                    }
-    
-                    .about-me {
-    
-                        p {
-                            width: 70%; 
-                            margin: auto;
-                        }
-                    }
-                }
-            }
-                    
-            #contact {
-                padding: 9em 0 9em 0;
-    
-                .container {
-                    width: 50%;
+                    width: 70%; 
                     margin: auto;
                 }
             }
-    
-            footer {
-                padding: 7em 3em 2em 3em;
-            }
+        }
+    }
+                    
+    #contact {
+        padding: 9em 0 9em 0;
+
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+    }
+
+    footer {
+        padding: 7em 3em 2em 3em;
+    }
 
         }
 
@@ -693,28 +650,84 @@ nav {
         }
 
         #work {
-            margin: 3em 0 3em 0;
+            margin: 2em 0 2em 0; 
+        }
 
+        .work-container {
+
+            .mirror {
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .non-mirror {
+                display:flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .project-example {
+    
+                .image {
+                    margin: 2em;
+                    max-width: 425px;
+                    min-width: 500px;
+                }
+    
+                .project-info {
+                    margin: 2em;
+                }
+    
+        
+                p {
+                    padding-bottom: 1em;
+                }
+                
+                .work-cta {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+        
+                    .git-link {
+                        display: flex;
+                        flex-direction: row;
+                        padding: 0em 1em 0em 0em;
+                    }
+        
+                    .live-link {
+                        font-family: var(--bodyfont);
+                        font-size: .9em;
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+        
+            }
+        
+    
             .current-project {
-
+            
                 .current-example {
-                    padding: 0 6em 0 6em;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    margin: 9em 0 0em 0;
+                    padding: 3em 3em 0 3em;
 
                     img {
-                        width: 100%;
+                        display: block;
+                         margin: auto;
+                         width: 70%;
                     }
                 }
             }
         }
-
-        .current-project {
+    
         
-            .current-example {
-                text-align: left;
-                margin: 9em 0 0em 0;
-                padding: 3em 3em 0 3em;
-            }
-        }
 
         #skills {
             padding: 5em;
@@ -730,20 +743,13 @@ nav {
         .navbar {
             padding: 1em 8em 0 8em;
 
-            // .logo {
-            //     font-size: 2.25em;
-            // }
             .primary-nav{
-                // font-size: 1.25em;
 
                 li { 
                     padding-bottom: .2em;
                     padding-left: .5em;
                 }
             }
-            // .secondary-nav {
-            //     font-size: 1.25em;
-            // }
         }
 
         section.hero,  #work {
@@ -760,12 +766,10 @@ nav {
 
                     .title-main {
                         padding: 1em 0 0 0;
-                        // font-size: 1.3em;
                     }
 
                     .hero-about {
                         padding: 0;
-                        // font-size: 1.3em;
                     }
 
                     .hero-cta {

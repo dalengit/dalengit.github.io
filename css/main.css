@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-color: #DB2626;
   --bodyfont: 'Roboto', sans-serif;
@@ -573,17 +577,14 @@ nav li a {
     width: 80%;
     margin: 3em 0 2.5em 0;
   }
-  #work {
-    margin: 2em 0 2em 0;
-  }
-  .mirror {
+  #work .work-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -591,61 +592,13 @@ nav li a {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .non-mirror {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  #work .work-container .left-col-work {
+    min-width: 650px;
+    max-width: 1440px;
   }
-  .project-example .image {
-    margin: 2em;
-    max-width: 350px;
-    min-width: 350px;
-  }
-  .project-example .project-info {
-    margin: 2em;
-  }
-  .project-example p {
-    padding-bottom: 1em;
-  }
-  .project-example .work-cta {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-  }
-  .project-example .work-cta .git-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 0em 1em 0em 0em;
-  }
-  .project-example .work-cta .live-link {
-    font-family: var(--bodyfont);
-    font-size: .9em;
-    color: black;
-    text-decoration: none;
-  }
-  .current-project .current-example {
-    text-align: left;
-    margin: 5em 0 0em 0;
-    padding: 3em 3em 0 3em;
+  #work .work-container .right-col-work {
+    max-width: 650px;
+    max-width: 1440px;
   }
   #skills {
     padding: 3em 3em 0 3em;
@@ -689,18 +642,93 @@ nav li a {
     font-size: 1.1em;
   }
   #work {
-    margin: 3em 0 3em 0;
+    margin: 2em 0 2em 0;
   }
-  #work .current-project .current-example {
-    padding: 0 6em 0 6em;
+  .work-container .mirror {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  #work .current-project .current-example img {
+  .work-container .non-mirror {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work-container .project-example .image {
+    margin: 2em;
+    max-width: 425px;
+    min-width: 500px;
+  }
+  .work-container .project-example .project-info {
+    margin: 2em;
+  }
+  .work-container .project-example p {
+    padding-bottom: 1em;
+  }
+  .work-container .project-example .work-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
   }
-  .current-project .current-example {
-    text-align: left;
+  .work-container .project-example .work-cta .git-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0em 1em 0em 0em;
+  }
+  .work-container .project-example .work-cta .live-link {
+    font-family: var(--bodyfont);
+    font-size: .9em;
+    color: black;
+    text-decoration: none;
+  }
+  .work-container .current-project .current-example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 9em 0 0em 0;
     padding: 3em 3em 0 3em;
+  }
+  .work-container .current-project .current-example img {
+    display: block;
+    margin: auto;
+    width: 70%;
   }
   #skills {
     padding: 5em;
