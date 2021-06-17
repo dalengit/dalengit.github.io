@@ -604,6 +604,9 @@ nav li a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  #work .work-container .image {
+    margin: 0 2em 0 2em;
+  }
   #work .work-container .left-col-work {
     min-width: 650px;
     max-width: 1440px;
@@ -612,6 +615,26 @@ nav li a {
     max-width: 650px;
     max-width: 1440px;
   }
+  #work .work-container .current-example {
+    margin-top: 3em;
+  }
+  #work .work-container .curr-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 500px;
+    margin: auto;
+  }
   #skills {
     padding: 3em 3em 0 3em;
   }
@@ -619,7 +642,7 @@ nav li a {
     padding: 3em 0 2em 0;
   }
   #skills .container .about-me p {
-    width: 70%;
+    width: 50%;
     margin: auto;
   }
   #contact {
