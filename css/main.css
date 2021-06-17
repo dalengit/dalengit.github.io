@@ -327,6 +327,7 @@ section {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  height: auto;
 }
 
 #skills .container .grid-wrap .grid > div::before {
