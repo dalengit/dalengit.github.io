@@ -632,7 +632,7 @@ nav li a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 500px;
+    width: 600px;
     margin: auto;
   }
   #skills {
