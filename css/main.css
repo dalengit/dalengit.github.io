@@ -763,7 +763,7 @@ nav li a {
   .work-container .current-project .current-example .curr-img {
     display: block;
     margin: auto;
-    width: 70%;
+    max-width: 700px;
   }
   #skills {
     padding: 5em;
