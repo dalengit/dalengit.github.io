@@ -2,4 +2,4 @@
 
 First iteration of portfolio site built in vaniilla HTML, CSS, JS. 
 
-Live: https://dalenchan.tech
+Live: https://dalengit.github.io/
